@@ -1,22 +1,33 @@
 {
-  "name": "nginx-starter",
-  "version": "1.0.0",
-  "description": "Nginx starter app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neeraj1bh/nginx-starter.git"
-  },
-  "author": "Neeraj Bhatt",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/neeraj1bh/nginx-starter/issues"
-  },
-  "homepage": "https://github.com/neeraj1bh/nginx-starter#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "nginx-starter",
+    "version": "1.0.0",
+    "description": "Nginx starter app",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index",
+        "dev": "nodemon index",
+        "clean": "rm -rf node_modules && rm package-lock.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/neeraj1bh/nginx-starter.git"
+    },
+    "author": "Neeraj Bhatt",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/neeraj1bh/nginx-starter/issues"
+    },
+    "homepage": "https://github.com/neeraj1bh/nginx-starter#readme",
+    "dependencies": {
+        "apicache": "^1.6.3",
+        "axios": "^1.5.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-rate-limit": "^6.11.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
 }
