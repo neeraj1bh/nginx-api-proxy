@@ -29,6 +29,7 @@ const limiter = rateLimit({
 });
 
 app.use(limiter);
+app.set('trust proxy', 1);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
